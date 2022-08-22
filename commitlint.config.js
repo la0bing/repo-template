@@ -9,7 +9,7 @@ module.exports = {
     //},
     rules: {
       'footer-max-line-length': [0],
-      'references-empty': [2, 'never'],
+    //  'references-empty': [2, 'never'],
       'subject-case': [0],
       'type-case': [2, 'always', 'lower-case'],
     },
