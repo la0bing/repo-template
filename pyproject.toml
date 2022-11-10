@@ -1,3 +1,16 @@
+[tool.poetry]
+name = "repo-template"
+version = "0.1.0"
+description = "A repository template to be used"
+authors = ["Melvin Low <la0bing07148@gmail.com>"]
+license = "LICENSE"
+readme = "README.md"
+packages = [{include = "repo_template"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pre-commit = "^2.20.0"
+
 [tool.isort]
 multi_line_output = 3
 include_trailing_comma = true
@@ -24,3 +37,8 @@ exclude = '''
     | blib2to3
     | tests/data
 )/'''
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
